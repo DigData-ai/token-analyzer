@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "DigData Spade (no auth)",
+    "name_for_model": "spade1",
+    "description_for_human": "Plugin for DigData premium users for blockchain data analysis.",
+    "description_for_model": "Plugin for DigData premium users for blockchain data analysis.",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "http://localhost:*/openapi.yaml",
+      "is_user_authenticated": false
+    },
+    "logo_url": "http://localhost:*/logo.png",
+    "contact_email": "alilimurad211@gmail.com",
+    "legal_info_url": "https://digdata.ai/legal"
+  }

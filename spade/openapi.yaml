@@ -1,0 +1,50 @@
+openapi: 3.0.1
+info:
+  title: Spade
+  description: A plugin that allows DigData premium users to analysis blockchain.
+  version: 'v1'
+servers:
+  - url: http://localhost:3333
+  
+paths:
+  /answer:
+    post:
+      operationId: answer_question
+      summary: Get the answer of the question
+        "200":
+      responses:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getAnswersResponse'
+    
+    /sql:
+      post:
+        operationId: sql
+        summary: Get the sql query
+          "200":
+        responses:
+            description: OK
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/getSqlResponse'
+
+components:
+  schemas:
+    getAnswersResponse:
+      type: object
+      properties:
+        answers:
+          type: string
+          items:
+            $ref: '#/components/schemas/answer'
+    
+    getSqlResponse:
+      type: object
+      properties:
+        sql:
+          type: string
+          items:
+            $ref: '#/components/schemas/sql'
