@@ -175,7 +175,7 @@ app.add_middleware(
 async def root(query: Message, request: Request):
     # if(request.headers["x-api-key"] != "123456789"):
     #     return {"message": "Invalid API Key"}
-    return {'message': 'Hello World'}
+    return {'message': query.query}
     messages = []
     messages.append({"role": "system", "content": "Don't make assumptions about what values to plug into functions. Ask for clarification if a user request is ambiguous."})
     messages.append({"role": "user", "content": query.query})
