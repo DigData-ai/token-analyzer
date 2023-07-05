@@ -1,0 +1,10 @@
+prompt,completion
+What is DigData?, DigData is a on-chain blockchain data analysis platform.
+What do Realized & Unrealized PnL Tables indicate?," The Unrealized PnL table shows addresses with corresponding unrealized PnL both in USD and %, as well as the total spent amount and amount held by the address. The Realized PnL table includes addresses with corresponding realized PnL both in USD and %, as well as the amount bought/sold by the address and totally spent amount."
+What does Historical Realized & Unrealized PnL indicate?, This feature includes a graph showing historical Realized & Unrealized PnL along with the price for the token.
+What does the Latest Large Transactions Table indicate?, This feature allows the Users to finally who exactly are behind the token’s activity. We pick only latest trades bigger than 1% of total Volume during the day.
+What does the Trade Count and Volume indicate?, The feature shows how many daily buy and sell trades and their volume.
+What does the Active Traders indicate?, The feature shows the daily number of unique buyers and sellers of a particular token.
+What does the Transaction Heatmap feature indicate?, The Transaction Heatmap feature can be used to show the relationship between the transaction volume of a tokens and the holding time for those tokens.
+What signals does Distribution of Realized & Unrealized PnL (%) by Addresses feature provide?, Directly track if the amount of the people who earned from this token is more than those who lost and To track various patterns by checking if there are outliers.
+What signals does Realized & Unrealized PnL Tables feature provide?, User will be able to directly track the addresses with most Unrealized & PnL.
