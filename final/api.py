@@ -12,7 +12,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import dotenv
 dotenv.load_dotenv()
 
-key = dotenv.get("OPENAI_API_KEY")
+key = os.getenv("OPENAI_API_KEY")
 openai.api_key = key
 os.environ["OPENAI_API_KEY"] = key
 model = SentenceTransformer('paraphrase-MiniLM-L6-V2')
