@@ -9,8 +9,6 @@ from langchain.indexes import VectorstoreIndexCreator
 from langchain.chat_models import ChatOpenAI
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
-import openai
-import requests
 
 
 openai.api_key = "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"
@@ -177,7 +175,7 @@ app.add_middleware(
 async def root(query: Message, request: Request):
     # if(request.headers["x-api-key"] != "123456789"):
     #     return {"message": "Invalid API Key"}
-    
+    return {'message': 'Hello World'}
     messages = []
     messages.append({"role": "system", "content": "Don't make assumptions about what values to plug into functions. Ask for clarification if a user request is ambiguous."})
     messages.append({"role": "user", "content": query.query})
