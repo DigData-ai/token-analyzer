@@ -11,8 +11,8 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-openai.api_key = "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"
-os.environ["OPENAI_API_KEY"] = "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"
+openai.api_key = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 model = SentenceTransformer('paraphrase-MiniLM-L6-V2')
 
 def chat_completion_request(messages, functions=None, function_call=None, model="gpt-3.5-turbo-0613"):
