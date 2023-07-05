@@ -121,7 +121,7 @@ def get_feature_explanation(message):
 functions = [
     {
         "name": "get_feature_explanation",
-        "description": "Get the explanation of any feature in DigData",
+        "description": "Get the explanation of any feature in DigData and information about Digdata , what they do and etc.",
         "parameters": {
             "type": "object",
             "properties": {
