@@ -9,10 +9,12 @@ from langchain.indexes import VectorstoreIndexCreator
 from langchain.chat_models import ChatOpenAI
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+import dotenv
+dotenv.load_dotenv()
 
-
-openai.api_key = "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"
-os.environ["OPENAI_API_KEY"] = "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"
+key = dotenv.get("OPENAI_API_KEY")
+openai.api_key = key
+os.environ["OPENAI_API_KEY"] = key
 model = SentenceTransformer('paraphrase-MiniLM-L6-V2')
 
 def chat_completion_request(messages, functions=None, function_call=None, model="gpt-3.5-turbo-0613"):
