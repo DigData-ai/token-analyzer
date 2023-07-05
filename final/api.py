@@ -188,13 +188,13 @@ async def root(query: Message, request: Request):
 
     if assistant_message["content"] is not None:
         print(assistant_message)
-        # return {"message" : assistant_message}
+        return {"message" : assistant_message}
     else:
         funcname = assistant_message["function_call"]["name"]
         my_function = globals().get(funcname)
         if my_function is not None and callable(my_function):
             print(my_function(assistant_message))
-            # return {"message" : my_function(assistant_message)}
+            return {"message" : my_function(assistant_message)}
         else:
             print(f"Function '{funcname}' does not exist or is not callable.")
             return {"message" : f"Function does not exist or is not callable."}
